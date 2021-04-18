@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* To center the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #00112c;
+    font-family: 'Open Sans', serif;
+}
+
+/* For Decor on the body */
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#e65c00, #F9D423);
+    clip-path: circle(18% at 10% 20%);
+    z-index: -1;
+}
+body::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(#2193b0, #6dd5ed);
+    clip-path: circle(20% at 90% 90%);
+    z-index: -1;
+}
+
+.calc{
+    position: relative;
+    display: grid;
+    border-radius: 10px 10px 0px 0px;
+
+}
+.calc .display{
+    grid-column: span 4;
+    height: 150px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 18px;
+}
+.calc span{
+    display: grid;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background: #0c2835;
+    place-items: center;
+    border:  1px solid rgba(0, 0, 0, .1);
+    user-select: none;
+}
+.calc span:active{
+    background: #2ecc71;
+    color: #111;
+
+}
+.calc span.clear{
+    grid-column: span 2;
+    width: 119px;
+    color: #fff ;
+    background: #ff0157;
+}
+.calc span.add{
+    grid-row: span 2;
+    height: 120px;
+}
+.calc span.equals{
+    background: #3498db;
+}
+
+
+/* For the intro text and animations */
+.intro{
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    background: rgb(155, 175, 163);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+}
+.intro-text{
+    color: rgb(224, 235, 255);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.hide{
+    background: black;
+    overflow: hidden;
+}
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+}
