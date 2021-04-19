@@ -98,7 +98,7 @@ body::after{
 }
 
 .slider{
-    background: rgb(155, 175, 163);
+    background: #3498db;
     position: fixed;
     top: 0;
     left: 0;
@@ -108,7 +108,7 @@ body::after{
 }
 .intro-text{
     color: rgb(224, 235, 255);
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 1.8;
 }
