@@ -42,7 +42,7 @@ body::after{
     position: relative;
     display: grid;
     border-radius: 10px 10px 0px 0px;
-
+    background: #00112c;
 }
 .calc .display{
     grid-column: span 4;
